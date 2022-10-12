@@ -11,9 +11,6 @@ export default {
         listData: Array,
     },
     components: { Text, },
-    data: function(){},
-    methods: {},
-    computed: {},
 }
 </script>
 
@@ -23,7 +20,7 @@ export default {
       <li 
         :class="data?.selected ? 'selected' : 'unselected'" 
         role="button" v-for="data in listData" 
-        :key="data?.id" v-on:click="$emit('handleClick', data)">
+        :key="data?.id" v-on:click="$emit('handle-click', data)">
         <Text :type="h2" :text="data?.name" :styles="{fontSize: '1.2rem'}" />
       </li>
   </ul>

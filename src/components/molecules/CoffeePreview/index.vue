@@ -71,6 +71,6 @@ export default {
         color: '#FFFF'
       }"
       text="Add To Cart" 
-      v-on:click="$emit('handlePreviewClick', id)" />
+      @handle-click="$emit('handle-preview-click', id)" />
   </div>
 </template>

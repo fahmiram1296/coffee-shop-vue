@@ -37,13 +37,6 @@ export default {
         listData: Array,    
     },
     components: { Image, Text, Button, Label, CoffeePreview, ButtonList },
-    data: function(){},
-    methods: {
-        handleClick: function(data) {
-            this?.$emit('handleListClick', data)
-        },
-    },
-    computed: {},
 }
 </script>
 
@@ -53,15 +46,16 @@ export default {
     <section class="catalogue-list">
         <ButtonList 
             :listData="listData" 
-            @handleClick="(data) => $emit('handleListClick', data)"
+            @handle-click="(data) => $emit('handle-list-click', data)"
         /> 
     </section>
     <section class="catalogue-preview">
         <CoffeePreview 
-            @handlePreviewClick="(data) => $emit('handlePreviewClick', data)"
+            @handle-preview-click="(data) => $emit('handle-preview-click', data)"
             :styles="{
                 ...previewData?.styles,
             }"
+            :id="previewData?.id"
             :image-props="previewData?.imageProps"
             :description="previewData?.description"
             :title="previewData?.title"

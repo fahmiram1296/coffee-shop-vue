@@ -26,7 +26,7 @@ export default {
 
 <!-- Ui Render -->
 <template>
-  <button :style="customStyleUi" v-on:click="$emit('handleClick', $event)">
+  <button :style="customStyleUi" v-on:click="$emit('handle-click', $event)">
     {{ text }}
   </button>
 </template>

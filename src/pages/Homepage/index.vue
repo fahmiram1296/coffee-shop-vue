@@ -56,8 +56,8 @@ export default {
         <Catalogue 
             :previewData="getCatalogueData"
             :listData="getListData"
-            @handlePreviewClick="handleAddToCart"
-            @handleListClick="handleListClick"
+            @handle-preview-click="handleAddToCart"
+            @handle-list-click="handleListClick"
         />
     </div>
 </template>

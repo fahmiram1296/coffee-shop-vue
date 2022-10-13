@@ -38,7 +38,7 @@ export default {
                 width: 40,
             }"
             :count="{
-                text: this?.getCountCart,
+                text: getCountCart,
                 color: '#FFFF',
                 backgroundColor: 'red',
             }"

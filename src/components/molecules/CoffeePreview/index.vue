@@ -30,10 +30,7 @@ export default {
         description: String,
         price: Number,
     },
-    components: { Image, Text, Button, Label},
-    data: function(){},
-    methods: {},
-    computed: {},
+    components: { Image, Text, Button, Label}
 }
 </script>
 

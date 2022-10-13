@@ -10,7 +10,7 @@ export default {
         styles: Object,
         listData: Array,
     },
-    components: { Text, },
+    components: { Text },
 }
 </script>
 
@@ -21,7 +21,7 @@ export default {
         :class="data?.selected ? 'selected' : 'unselected'" 
         role="button" v-for="data in listData" 
         :key="data?.id" v-on:click="$emit('handle-click', data)">
-        <Text :type="h2" :text="data?.name" :styles="{fontSize: '1.2rem'}" />
+        <Text :type="h2" :text="data?.name" :styles="{fontSize: '1rem'}" />
       </li>
   </ul>
 </template>

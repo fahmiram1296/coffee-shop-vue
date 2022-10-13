@@ -23,8 +23,6 @@ export default {
         },
     },
   },
-  data() {},
-  methods: {},
   computed: {
     imageQuery:function () {
         const query = `${this.imageProps?.src}?q=80&w=${this.imageProps?.width}&h=${this.imageProps?.height}`;

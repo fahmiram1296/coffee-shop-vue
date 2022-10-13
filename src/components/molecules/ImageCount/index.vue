@@ -27,10 +27,7 @@ export default {
             backgroundColor: String
         },
     },
-    components: { Image, Text },
-    data: function(){},
-    methods: {},
-    computed: {},
+    components: { Image, Text }
 }
 </script>
 

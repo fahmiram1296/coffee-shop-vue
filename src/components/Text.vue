@@ -10,6 +10,8 @@ export default {
     text: String,
     type: String,
   },
+  data() {},
+  methods: {},
   computed: {
     customStyleUi: function () {
         const defaultCustomStyle = {
